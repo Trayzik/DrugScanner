@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0EFF2">
+
+    <!-- header section -->
+    <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/header"
+                android:scaleType="fitXY"
+                android:importantForAccessibility="no"
+                android:layout_centerInParent="true"/>
+
+        <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:importantForAccessibility="no"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                />
+
+
+    </RelativeLayout>
+
+    <!-- body -->
+    <RelativeLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header">
+
+        <TextView
+                android:id="@+id/product_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_name"
+                android:textSize="20sp"
+                android:textColor="#266FC3"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="57dp"
+                />
+        <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter"
+                android:layout_marginStart="38dp"
+                android:layout_below="@+id/product_name_text"
+                />
+        <TextView
+                android:id="@+id/product_common_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_common_name"
+                android:textSize="20sp"
+                android:textColor="#266FC3"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/product_name"
+                />
+        <TextView
+                android:id="@+id/product_common_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter"
+                android:layout_marginStart="38dp"
+                android:layout_below="@+id/product_common_name_text"
+                />
+        <TextView
+                android:id="@+id/product_pharmaceutical_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_pharmaceutical_name"
+                android:textSize="20sp"
+                android:textColor="#266FC3"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/product_common_name"
+                />
+        <TextView
+                android:id="@+id/product_pharmaceutical_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter"
+                android:layout_marginStart="38dp"
+                android:layout_below="@+id/product_pharmaceutical_name_text"
+                />
+        <TextView
+                android:id="@+id/product_expiration_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expiration"
+                android:textSize="20sp"
+                android:textColor="#266FC3"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/product_pharmaceutical_name"
+                />
+        <TextView
+                android:id="@+id/product_expiration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter"
+                android:layout_marginStart="38dp"
+                android:layout_below="@+id/product_expiration_text"
+                />
+        <TextView
+                android:id="@+id/see_leaflet"
+                android:layout_width="199dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/product_expiration"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="74dp"
+                android:background="@drawable/alerts_rectangle"
+                android:backgroundTint="#2845DC"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/see_leaflet"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

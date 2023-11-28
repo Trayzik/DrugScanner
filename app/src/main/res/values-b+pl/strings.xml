@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DrugScanner</string>
+    <string name="scan_code_text">Zeskanuj kod\nlub\nWpisz ręcznie</string>
+    <string name="gtin_code">KOD GTIN</string>
+    <string name="done">Gotowe!</string>
+    <string name="enter_gtin">Uzupełnij kod gtin!</string>
+    <string name="no_drug">Nie znaleziono podanego lekarstwa!</string>
+    <string name="product_name">Nazwa produktu:</string>
+    <string name="product_common_name">Nazwa powszechna:</string>
+    <string name="product_pharmaceutical_name">Nazwa farmaceutyczna:</string>
+    <string name="expiration">Ważność:</string>
+    <string name="see_leaflet">Zobacz ulotke</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0EFF2">
+
+    <!-- header section -->
+    <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/header"
+                android:scaleType="fitXY"
+                android:importantForAccessibility="no"
+                android:layout_centerInParent="true"/>
+
+<!--        <ImageView-->
+<!--                android:layout_width="64dp"-->
+<!--                android:layout_height="64dp"-->
+<!--                android:src="@drawable/logo_transparent_white"-->
+<!--                android:importantForAccessibility="no"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                />-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/scanner"
+                android:layout_width="255dp"
+                android:layout_height="178dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"/>
+        <TextView
+                android:id="@+id/scan_code_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scanner"
+                android:layout_centerHorizontal="true"
+                android:text="@string/scan_code_text"
+                android:textSize="16sp"
+                android:textColor="#266FC3"
+                android:fontFamily="@font/inter"
+                android:textAlignment="center"
+                android:lines="3"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="24dp"/>
+        <EditText
+                android:id="@+id/gtin_code"
+                android:layout_width="170dp"
+                android:layout_height="42dp"
+                android:background="@drawable/scanner_input"
+                android:layout_below="@+id/scan_code_text"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:hint="@string/gtin_code"
+                android:maxLength="14"
+                android:autofillHints="gtin code"
+                />
+
+        <TextView
+                android:id="@+id/done"
+                android:layout_width="199dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/gtin_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="82dp"
+                android:background="@drawable/alerts_rectangle"
+                android:backgroundTint="#2845DC"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/done"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <!-- web view section -->
+</RelativeLayout>
